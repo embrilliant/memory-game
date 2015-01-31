@@ -74,26 +74,28 @@ $(function(){
 
 			$("#lid").css({"display":"block"});
 
-			setTimeout(compareImg, 1250);
-
-			function compareImg() {
-				if (click1 !== click2) {
+			if (click1 !== click2) {
+				setTimeout(function(){
 					$img.removeClass("clicked");
 					$("#lid").css({"display":"none"});
-				} else {
-					clickedGrp.addClass("stay");
-					$img.removeClass("clicked");
-					$("#lid").css({"display":"none"});
-				}
+				}, 1250);
+			} else {
+				clickedGrp.addClass("stay");
+				$img.removeClass("clicked");
+				$("#lid").css({"display":"none"});
 			}
 		}
 
+		var completed = $(".stay").length;
 
+		if (completed > 10 && numberClicked > 1) {
+			$("p").css({"display":"block"});
+		}
 		
-		console.log(event.target, numberClicked, click1, click2, $divs);
+		console.log(event.target, numberClicked, completed);
 	}
 
-	console.log($divs);
+	// console.log($divs);
 
 });
 
