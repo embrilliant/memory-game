@@ -1,0 +1,65 @@
+html {
+	background-image: url(images/bgd.jpg);
+	background-size: cover;
+}
+
+body {
+	margin: 0;
+    padding: 0;
+}
+
+#wrap {
+	margin-top: 4%;
+	margin-left: 25%;
+}
+
+#container, #lid {
+	height: 532px;
+	width: 527px;
+	position: absolute;
+}
+
+#container {
+	/*background-color: rgba(225, 160, 114, 0.6);*/
+}
+
+.la {
+	background-color: #ff0084;
+	margin: 0;
+	height: 130px;
+	width: 173px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.4);
+	display: inline-block;
+	clear: both;
+}
+
+img {
+	visibility: visible;
+	border-radius: 10px;
+}
+
+.clicked {
+	background-color: tomato;
+	visibility: hidden;
+}
+
+.stay {
+	visibility: hidden;
+}
+
+#lid {
+	background-color: none;
+	display: none;
+	z-index: 3;
+}
+
+
+
+
+
+
+
+
+
+
