@@ -78,7 +78,7 @@ $(function(){
 				setTimeout(function(){
 					$img.removeClass("clicked");
 					$("#lid").css({"display":"none"});
-				}, 1250);
+				}, 1000);
 			} else {
 				clickedGrp.addClass("stay");
 				$img.removeClass("clicked");
